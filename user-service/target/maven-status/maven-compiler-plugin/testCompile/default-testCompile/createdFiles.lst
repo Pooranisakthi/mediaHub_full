@@ -1,0 +1,3 @@
+com\mediahub\subscriptionPlan\service\UserServiceTest.class
+com\mediahub\subscriptionPlan\controller\UserControllerTest.class
+com\mediahub\subscriptionPlan\repository\UserRepositoryTest.class

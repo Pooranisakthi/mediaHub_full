@@ -1,0 +1,9 @@
+com\mediahub\subscriptionPlan\controller\SubscriptionHistoryControllerTest.class
+com\mediahub\subscriptionPlan\service\SubscriptionHistoryServiceTest.class
+com\mediahub\subscriptionPlan\repository\SubscriptionPlanRepositoryTest.class
+com\mediahub\subscriptionPlan\controller\SubscriptionPlanControllerTest.class
+com\mediahub\subscriptionPlan\repository\SubscriptionHistoryRepositoryTest.class
+com\mediahub\subscriptionPlan\service\UserSubscriptionServiceTest.class
+com\mediahub\subscriptionPlan\service\SubscriptionPlanServiceTest.class
+com\mediahub\subscriptionPlan\repository\UserSubscriptionRepositoryTest.class
+com\mediahub\subscriptionPlan\controller\UserSubscriptionControllerTest.class

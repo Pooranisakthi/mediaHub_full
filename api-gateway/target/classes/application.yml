@@ -1,0 +1,38 @@
+server:
+  port: 8086
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    compatibility-verifier:
+      enabled: false
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/mediaHub/subscriptionPlan/users/**
+        - id: subscription-service
+          uri: lb://subscription-service
+          predicates:
+            - Path=/mediaHub/subscriptionPlan/plans/**, /mediaHub/subscriptionPlan/usersubscriptions/**, /mediaHub/subscriptionPlan/subscriptionhistory/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
